@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Banner */
+#box-banner{
+    padding: 100px 0px 0px 0px;
+}
+
+#box-banner img{
+    width: 100%;
+}
+
+#box-banner #banner-struct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+#box-banner .bannertext h1{
+    font-weight: 600;
+    font-size: 90px;
+}
+
+#box-banner .bannertext h2{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+#box-banner .bannertext h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#box-banner .bannerbutton{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#box-banner .bannerbutton button{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #323232;
+    border: 2px solid red;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    transition: .4s ease;
+    transition-property: background-color, color;
+}
+
+#box-banner .bannerbutton button:focus{
+    outline: none;
+}
+
+#box-banner .bannerbutton button:hover{
+    color: white;
+    background-color: red;
+}
+
+#box-banner .bannerbutton button:before{
+    content: '';
+    background: grey;
+    opacity: .5s;
+    filter: blur(30px);
+}
+
+
+/* Header Section */
+header .navbar{
+    padding: 1rem 11rem;
+    background-color:white;
+}
+
+header .navbar .navbar-brand{
+    padding: 0 2rem 0 0;
+}
+header .navbar .navbar-brand .nav-logo{
+    padding: 0.4rem 1.7rem 0 0;
+    margin-bottom: 0.4rem;
+    font-size: 17px;
+    font-weight: 600;
+    color: #323232;
+}
+
+header .navbar .navbar-collapse .nav-item .nav-link{
+    padding: 0.4rem 1rem 0 1rem;
+    margin-bottom: 0.4rem;
+    font-size: 15px;
+    font-weight: 500;
+    color: #323232;
+}
+
+header .navbar .navbar-nav li > a:after{
+    content: '';
+    display: block;
+    height: 2px;
+    border-radius: 26px;
+    background: red;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+
+header .navbar .navbar-nav li > a:hover:after{
+    transform: scaleX(1);
+    height: 2px;
+    transition: transform .4s;
+}
+
+
+/* Projects */
+body .projects .button-group button{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: black;
+    font-weight: 500;
+}
+body .projects .button-group button:active {
+    outline: none;
+    border: none;
+}
+    
+body .projects .button-group button:focus {
+    outline:0;
+    font-weight: 600;
+}
+
+#box-projects{
+    background: aliceblue;
+    padding: 40px 40px;
+    border-radius: 14px;
+}
+
+.projects{
+    padding-top: 60px;
+}
+
+.projects .projects-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0px 0px 12px 12px;
+}
+
+.project-item {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#mappa{
+    background: url('../img/Mappav2.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#splitz{
+    background: url('../img/Screenshot2ResizedCropped.png') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#ev{
+    background: url('../img/ev2.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#portfolio{
+    background: url('../img/website.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#oioi{
+    padding: 30px 30px;
+}
+
+.project-item h2{
+    width: 100%;
+    height: 100%;
+    background: #323232;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    padding: 180px 0 0;
+}
+  
+.project-item:hover {
+    box-shadow: 0 4px 4px 4px #cccccc;
+}
+
+.project-item:hover h2{
+    opacity: 0.7;
+}
+
+/* Skills */
+#box-skills{
+    background: #ffe6e6;
+    padding: 40px 40px;
+    border-radius: 14px;
+}
+
+.skills{
+    padding-top: 60px;
+}
+
+.skills .skills-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0px 12px 12px 0px;
+}
+
+#skills-item {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#skills-item .skill-icon{
+    width: 50px;
+}
+
+.imgcircle{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  
+}
+
+#skills-item h2{
+    padding-top: 10px;
+    font-size: 26px;
+}
+
+#skills-item h3{
+    font-size: 14px;
+}
+
+.subtitle h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* About Me */
+#box-about{
+    background: #f2f2f2;
+    padding: 40px 40px;
+}
+
+.about{
+    margin-top: 0px;
+    background: #f2f2f2;
+}
+
+.about .about-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0px 12px 12px 0px;
+}
+
+.about p{
+    font-weight: 400;
+}
+
+/* Footer */
+footer.footer-area{
+    margin-top: 60px;
+    padding: 2rem 0;
+    background-color: #323232;
+}
+
+footer.footer-area .social h5{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+footer.footer-area .social a>i{
+    font-size: 30px;
+    padding: 1rem;
+    color: white;
+}
+
+/* Community */
+#box-community{
+    background: #ffffe6;
+    padding: 40px 40px;
+    border-radius: 14px;
+}
+
+.community{
+    padding-top: 60px;
+}
+
+.community .community-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0px 12px 12px 0px;
+}
+
+.communityHeader p{
+    font-weight: 400;
+}
+
+#community-struct{
+    padding-top: 30px;
+}
+
+.community-pic img{
+    width: 100%;
+    height: 260px;
+}
+
+#community-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+#community-item h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#community-item li{
+    font-size: 18px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+/* Education */
+#box-education{
+    background: #ddfada;
+    padding: 40px 40px;
+    border-radius: 14px;
+}
+
+.education{
+    margin-top: 60px;
+}
+
+.education .education-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0px 0px 12px 12px;
+}
+
+#education-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#education-item h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#education-item li{
+    font-size: 16px;
+    text-align: left;
+}
+
+#education-struct{
+    padding: 20px 20px;
+}
