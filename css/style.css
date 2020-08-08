@@ -419,3 +419,92 @@ footer.footer-area .social a>i{
 #education-struct{
     padding: 20px 20px;
 }
+
+/* Responsiveness */ 
+@media (max-width: 600px){
+    header .navbar,
+    header .navbar .navbar-brand
+    {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    #box-banner .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #box-banner .bannertext h1{
+        font-weight: 600;
+        font-size: 14vw;
+    }
+    
+    #box-banner .bannertext h2{
+        margin-top: 20px;
+        font-size: 6vw;
+        font-weight: 400;
+        margin-bottom: 1px;
+    }
+    
+    #box-banner .bannertext h3{
+        display: none;
+    }
+
+    #box-banner .bannerbutton{
+        display: none;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 767px){
+    header .navbar,
+    header .navbar .navbar-brand
+    {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    #box-banner .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #box-banner .bannertext h1{
+        font-weight: 600;
+        font-size: 14vw;
+    }
+    
+    #box-banner .bannertext h2{
+        font-size: 5vw;
+    }
+    
+    #box-banner .bannertext h3{
+        font-size: 4vw;
+    }
+
+    #box-banner .bannerbutton{
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1030px){
+    header .navbar,
+    header .navbar .navbar-brand
+    {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    #box-banner .bannertext h1{
+        font-size: 70px;
+    }
+    
+    #box-banner .bannertext h2{
+        font-size: 29px;
+    }
+    
+    #box-banner .bannertext h3{
+        font-size: 20px;
+    }
+}
