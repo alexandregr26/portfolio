@@ -15,7 +15,7 @@
 
 <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <div class="container">
+        <div id="navbar-container" class="container">
             <a class="navbar-brand" href="#">
                 <h1 class="nav-logo">Alexandre Gouveia Rodrigues</h1>
             </a>
@@ -27,22 +27,30 @@
                 <div class="mr-auto"></div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#1">About</a>
+                        <a id="aboutText" class="nav-link" href="#1">About</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#2">Work<span class="sr-only">(current)</span></a>
+                        <a id="workText" class="nav-link" href="#2">Work<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#3">Skills</a>
+                        <a id="skillsText" class="nav-link" href="#3">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#4">Community</a>
+                        <a id="communityText" class="nav-link" href="#4">Community</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#5">Education</a>
+                        <a id="educationText" class="nav-link" href="#5">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#6">Contact</a>
+                        <a id="contactText" class="nav-link" href="#6">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <select id="list" onchange="getSelectValue();">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                            <option value="pt">PT</option>
+                            <option value="es">ES</option>
+                        </select>
                     </li>
                 </ul>
             </div>
@@ -61,14 +69,14 @@
                 </div>
                 <div id="banner-struct" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="bannertext">
-                        <h2>Hello! My name is</h2>
+                        <h2 id="helloText" >Hello! My name is</h2>
                         <h1>Alexandre</h1>
-                        <h3>Welcome to my website, which I created to make our interaction more informative and
+                        <h3 id="welcomeText" >Welcome to my website, which I created to make our interaction more informative and
                             pleasant.</h3>
                     </div>
                     <div class="bannerbutton">
                         <a href="./img/resume.pdf" download>
-                            <button>Download Resume</button>
+                            <button id="resumeText">Download Resume</button>
                         </a>
                     </div>
                 </div>
@@ -79,14 +87,14 @@
     <!-- About -->
     <section id="1" class="about">
         <div id="box-about" class="container">
-            <h1 class="about-title">About Me</h1>
+            <h1 id="aboutText0" class="about-title">About Me</h1>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p>I am a third-year student of Electrical and Computer Engineering pursuing a Business Minor at the
+                    <p id="aboutText1">I am a third-year student of Electrical and Computer Engineering pursuing a Business Minor at the
                         University of Toronto. It is my firm belief that behind every project is a new challenge, a new
                         goal, and a new solution to be discovered. For this reason, I am here to put my technical skills
                         at the service of your creative ideas.</p>
-                    <p>The focus of my work is to create simple and elegant solutions to complex problems. Thus, it is
+                    <p id="aboutText2">The focus of my work is to create simple and elegant solutions to complex problems. Thus, it is
                         important to me to not only focus on the technical aspects of a project, but to be fully
                         invested in your business goals. I look forward to working with you.</p>
                 </div>
@@ -98,14 +106,14 @@
     <section id="2" class="projects">
         <div id="box-projects" class="container">
             <div class="projectsHeader">
-                <h1 class="projects-title">My Work</h1>
+                <h1 id="myWorkText" class="projects-title">My Work</h1>
             </div>
 
             <div class="button-group">
-                <button type="button" class="active">All</button>
-                <button type="button" data-filter=".electrical">Electrical</button>
-                <button type="button" data-filter=".software">Software</button>
-                <button type="button" data-filter=".others">Others</button>
+                <button id="allText" type="button" class="active">All</button>
+                <button id="electricalText" type="button" data-filter=".electrical">Electrical</button>
+                <button id="softwareText" type="button" data-filter=".software">Software</button>
+                <button id="othersText" type="button" data-filter=".others">Others</button>
             </div>
 
             <div id="project-list" class="row">
@@ -145,14 +153,14 @@
     <section id="3" class="skills">
         <div id="box-skills" class="container">
             <div class="skillsHeader">
-                <h1 class="skills-title">Skills & Experience</h1>
-                <p>Due to the different nature of my past and current projects, I have mastered and gained familiarity
+                <h1 id="skillsText0" class="skills-title">Skills & Experience</h1>
+                <p id="skillsText1">Due to the different nature of my past and current projects, I have mastered and gained familiarity
                     with a variety of tools. I am always looking to improve my current skills, and I am open to learning
                     new ones.</p>
             </div>
 
             <div class="subtitle">
-                <h1>Languages:</h1>
+                <h1 id="languagesText">Languages:</h1>
             </div>
             <div id="skills-list" class="row">
                 <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
@@ -253,7 +261,7 @@
                         <div class="imgcircle">
                             <img src="./img/english.png" class="skill-icon" alt="">
                         </div>
-                        <h2>English</h2>
+                        <h2 id="englishText">English</h2>
                         <h3>Fluent</h3>
                     </div>
                 </div>
@@ -262,7 +270,7 @@
                         <div class="imgcircle">
                             <img src="./img/portuguese.png" class="skill-icon" alt="">
                         </div>
-                        <h2>Portuguese</h2>
+                        <h2 id="portugueseText">Portuguese</h2>
                         <h3>Fluent</h3>
                     </div>
                 </div>
@@ -271,7 +279,7 @@
                         <div class="imgcircle">
                             <img src="./img/french.png" class="skill-icon" alt="">
                         </div>
-                        <h2>French</h2>
+                        <h2 id="frenchText">French</h2>
                         <h3>Advanced</h3>
                     </div>
                 </div>
@@ -280,7 +288,7 @@
                         <div class="imgcircle">
                             <img src="./img/spanish.png" class="skill-icon" alt="">
                         </div>
-                        <h2>Spanish</h2>
+                        <h2 id="spanishText">Spanish</h2>
                         <h3>Advanced</h3>
                     </div>
                 </div>
@@ -289,7 +297,7 @@
                         <div class="imgcircle">
                             <img src="./img/german.png" class="skill-icon" alt="">
                         </div>
-                        <h2>German</h2>
+                        <h2 id="germanText">German</h2>
                         <h3>Beginner</h3>
                     </div>
                 </div>
@@ -300,8 +308,8 @@
     <section id="4" class="community">
         <div id="box-community" class="container">
             <div class="communityHeader">
-                <h1 class="community-title">Volunteering & Social</h1>
-                <p>Community participation is very important in achieving social justice and creating a supportive,
+                <h1 id="volunteeringText0" class="community-title">Volunteering & Social</h1>
+                <p id="volunteeringText1" >Community participation is very important in achieving social justice and creating a supportive,
                     positive environment. I have always looked for opportunities to support my communities and believe
                     that it was this path that strengthened my leadership skills and highlighted the importance of my
                     role in my communities. In this sense, I know that these activities will bring me one step closer to
@@ -316,11 +324,11 @@
                 </div>
                 <div id="community-struct" class="col-lg-8 col-md-12 col-sm-12 col-xs-6">
                     <div id="community-item">
-                        <h2>BRASA - DIRECTOR OF COMMUNICATIONS</h2>
+                        <h2 id="brasaText0">BRASA - DIRECTOR OF COMMUNICATIONS</h2>
                         <ul>
-                            <li>Implemented marketing and advertising strategies to expand the club’s influence within
+                            <li id="brasaText1">Implemented marketing and advertising strategies to expand the club’s influence within
                                 the University of Toronto's campus</li>
-                            <li>Managed social media pages to promote and organize events for Brazilian students in
+                            <li id="brasaText2">Managed social media pages to promote and organize events for Brazilian students in
                                 Toronto</li>
                         </ul>
                     </div>
@@ -332,11 +340,11 @@
                 </div>
                 <div id="community-struct" class="col-lg-8 col-md-12 col-sm-12 col-xs-6">
                     <div id="community-item">
-                        <h2>St. Michael's College - House President</h2>
+                        <h2 id="smcText0">St. Michael's College - House President</h2>
                         <ul>
-                            <li>Planned and hosted various house events and meetings to promote social wellbeing on
+                            <li id="smcText1">Planned and hosted various house events and meetings to promote social wellbeing on
                                 residence.</li>
-                            <li>Helped to create a supportive, inclusive residence community that encourages involvement
+                            <li id="smcText2">Helped to create a supportive, inclusive residence community that encourages involvement
                                 and respect</li>
                         </ul>
                     </div>
@@ -348,9 +356,9 @@
                 </div>
                 <div id="community-struct" class="col-lg-8 col-md-12 col-sm-12 col-xs-6">
                     <div id="community-item">
-                        <h2>Electrical and Computer Engineering Club - Finance Director</h2>
+                        <h2 id="eceText0">Electrical and Computer Engineering Club - Finance Director</h2>
                         <ul>
-                            <li>Created and monitored a budget of $42000 for all club expenses during the 2018-2019
+                            <li id="eceText1">Created and monitored a budget of $42000 for all club expenses during the 2018-2019
                                 academic year.</li>
                         </ul>
                     </div>
@@ -362,10 +370,10 @@
                 </div>
                 <div id="community-struct" class="col-lg-8 col-md-12 col-sm-12 col-xs-6">
                     <div id="community-item">
-                        <h2>Niagara-on-the-lake Soccer Club - Captain</h2>
+                        <h2 id="notlText0">Niagara-on-the-lake Soccer Club - Captain</h2>
                         <ul>
-                            <li>Developed a strong work ethic and perseverance to uphold team standards.</li>
-                            <li>Communicated with a diverse group of athletes, coaches, and game officials for
+                            <li id="notlText1">Developed a strong work ethic and perseverance to uphold team standards.</li>
+                            <li id="notlText2">Communicated with a diverse group of athletes, coaches, and game officials for
                                 conflict resolution and fairness in the sport.</li>
                         </ul>
                     </div>
@@ -378,13 +386,13 @@
     <section id="5" class="education">
         <div id="box-education" class="container">
             <div class="educationHeader">
-                <h1 class="education-title">Education & Courses</h1>
+                <h1 id="myeducationText" class="education-title">Education & Courses</h1>
             </div>
 
             <div id="project-list" class="row">
                 <div id="education-struct" class="col-lg-4 col-md-4 col-sm-12 col-xs-6">
                     <div id="education-item">
-                        <h2>First Year</h2>
+                        <h2 id="firstyearText">First Year</h2>
                         <ul>
                             <li>Orientation to Engineering</li>
                             <li>Materials Science</li>
@@ -401,7 +409,7 @@
                 </div>
                 <div id="education-struct" class="col-lg-4 col-md-4 col-sm-12 col-xs-6">
                     <div id="education-item">
-                        <h2>Second Year</h2>
+                        <h2 id="secondyearText">Second Year</h2>
                         <ul>
                             <li>Circuit Analysis</li>
                             <li>Digital Systems</li>
@@ -418,7 +426,7 @@
                 </div>
                 <div id="education-struct" class="col-lg-4 col-md-4 col-sm-12 col-xs-6">
                     <div id="education-item">
-                        <h2>Third Year</h2>
+                        <h2 id="thirdyearText">Third Year</h2>
                         <ul>
                             <li>Probability and Applications</li>
                             <li>Digital Electronics</li>
