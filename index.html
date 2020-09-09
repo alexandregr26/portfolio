@@ -69,9 +69,10 @@
                 </div>
                 <div id="banner-struct" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="bannertext">
-                        <h2 id="helloText" >Hello! My name is</h2>
+                        <h2 id="helloText">Hello! My name is</h2>
                         <h1>Alexandre</h1>
-                        <h3 id="welcomeText" >Welcome to my website, which I created to make our interaction more informative and
+                        <h3 id="welcomeText">Welcome to my website, which I created to make our interaction more
+                            informative and
                             pleasant.</h3>
                     </div>
                     <div class="bannerbutton">
@@ -90,11 +91,13 @@
             <h1 id="aboutText0" class="about-title">About Me</h1>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p id="aboutText1">I am a third-year student of Electrical and Computer Engineering pursuing a Business Minor at the
+                    <p id="aboutText1">I am a third-year student of Electrical and Computer Engineering pursuing a
+                        Business Minor at the
                         University of Toronto. It is my firm belief that behind every project is a new challenge, a new
                         goal, and a new solution to be discovered. For this reason, I am here to put my technical skills
                         at the service of your creative ideas.</p>
-                    <p id="aboutText2">The focus of my work is to create simple and elegant solutions to complex problems. Thus, it is
+                    <p id="aboutText2">The focus of my work is to create simple and elegant solutions to complex
+                        problems. Thus, it is
                         important to me to not only focus on the technical aspects of a project, but to be fully
                         invested in your business goals. I look forward to working with you.</p>
                 </div>
@@ -103,7 +106,7 @@
     </section>
 
     <!-- Projects -->
-    <section id="2" class="projects">
+    <section id="2" class="sectionArea">
         <div id="box-projects" class="container">
             <div class="projectsHeader">
                 <h1 id="myWorkText" class="projects-title">My Work</h1>
@@ -111,37 +114,64 @@
 
             <div class="button-group">
                 <button id="allText" type="button" class="active">All</button>
-                <button id="electricalText" type="button" data-filter=".electrical">Electrical</button>
                 <button id="softwareText" type="button" data-filter=".software">Software</button>
+                <button id="electricalText" type="button" data-filter=".electrical">Electrical</button>
+                <button id="webDevText" type="button" data-filter=".webdev">Web Dev</button>
                 <button id="othersText" type="button" data-filter=".others">Others</button>
             </div>
 
             <div id="project-list" class="row">
-                <div id="oioi" class="col-lg-6 col-md-12 col-sm-12 col-xs-6 software">
-                    <a href="#">
+                <div id="project-struct" class="col-lg-6 col-md-12 col-sm-12 col-xs-6 software">
+                    <a href="./projects/mappa.html">
                         <div id="mappa" class="project-item">
-                            <h2>G.I.S</h2>
+                            <div class="overlay">
+                                <div class="text">Mappa: Geographic Information System</div>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div id="oioi" class="col-lg-6 col-md-12 col-sm-12 col-xs-6 software">
-                    <a href="#">
+                <div id="project-struct" class="col-lg-6 col-md-12 col-sm-12 col-xs-6 webdev">
+                    <a href="./projects/hhc.html">
+                        <div id="hhc" class="project-item">
+                            <div class="overlay">
+                                <div class="text">Hard Hat Cafe: E-commerce</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="project-struct" class="col-lg-6 col-md-12 col-sm-12 col-xs-6 software">
+                    <a href="./projects/splitz.html">
                         <div id="splitz" class="project-item">
-                            <h2>Splitz</h2>
+                            <div class="overlay">
+                                <div class="text">Splitz: Chrome Extension</div>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div id="oioi" class="col-lg-6 col-md-12 col-sm-12 col-xs-6 others">
-                    <a href="#">
-                        <div id="ev" class="project-item">
-                            <h2>EV Chargers</h2>
+                <div id="project-struct" class="col-lg-6 col-md-12 col-sm-12 col-xs-6 electrical">
+                    <a href="./projects/utat.html">
+                        <div id="utat" class="project-item">
+                            <div class="overlay">
+                                <div class="text">Low Power Sensor</div>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div id="oioi" class="col-lg-6 col-md-12 col-sm-12 col-xs-6 software">
+                <div id="project-struct" class="col-lg-6 col-md-12 col-sm-12 col-xs-6 webdev">
                     <a href="#">
                         <div id="portfolio" class="project-item">
-                            <h2>Portfolio</h2>
+                            <div class="overlay">
+                                <div class="text">Portfolio Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="project-struct" class="col-lg-6 col-md-12 col-sm-12 col-xs-6 others">
+                    <a href="#">
+                        <div id="ev" class="project-item">
+                            <div class="overlay">
+                                <div class="text">EV Charging Configuration</div>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -150,17 +180,18 @@
     </section>
 
     <!-- Skills -->
-    <section id="3" class="skills">
+    <section id="3" class="sectionArea">
         <div id="box-skills" class="container">
             <div class="skillsHeader">
-                <h1 id="skillsText0" class="skills-title">Skills & Experience</h1>
-                <p id="skillsText1">Due to the different nature of my past and current projects, I have mastered and gained familiarity
+                <h1 id="skillsText0" class="index-title">Skills & Certificates</h1>
+                <p id="skillsText1">Due to the different nature of my past and current projects, I have mastered and
+                    gained familiarity
                     with a variety of tools. I am always looking to improve my current skills, and I am open to learning
                     new ones.</p>
             </div>
 
             <div class="subtitle">
-                <h1 id="languagesText">Languages:</h1>
+                <h1 id="languagesText">Programming Languages:</h1>
             </div>
             <div id="skills-list" class="row">
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -169,7 +200,7 @@
                             <img src="./img/armlogo.png" class="skill-icon" alt="">
                         </div>
                         <h2>Assembly</h2>
-                        <h3>2019-2020</h3>
+                        <h3>Proficient</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -178,7 +209,7 @@
                             <img src="./img/c++logo.png" class="skill-icon" alt="">
                         </div>
                         <h2>C++</h2>
-                        <h3>2018-2020</h3>
+                        <h3>Proficient</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -187,7 +218,7 @@
                             <img src="./img/clogo1.png" class="skill-icon" alt="">
                         </div>
                         <h2>C</h2>
-                        <h3>2018-2020</h3>
+                        <h3>Proficient</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -196,7 +227,7 @@
                             <img src="./img/csslogo.png" class="skill-icon" alt="">
                         </div>
                         <h2>CSS</h2>
-                        <h3>2020-2020</h3>
+                        <h3>Proficient</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -205,7 +236,7 @@
                             <img src="./img/htmllogo.png" class="skill-icon" alt="">
                         </div>
                         <h2>HTML</h2>
-                        <h3>2020-2020</h3>
+                        <h3>Proficient</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -214,7 +245,7 @@
                             <img src="./img/jslogo.png" class="skill-icon" alt="">
                         </div>
                         <h2>Javascript</h2>
-                        <h3>2020-2020</h3>
+                        <h3>Proficient</h3>
                     </div>
                 </div>
             </div>
@@ -229,7 +260,7 @@
                             <img src="./img/androidlogo.png" class="skill-icon" alt="">
                         </div>
                         <h2>Android</h2>
-                        <h3>2020-2020</h3>
+                        <h3>Intermediate</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -238,7 +269,7 @@
                             <img src="./img/matlablogo.png" class="skill-icon" alt="">
                         </div>
                         <h2>MATLAB</h2>
-                        <h3>2018-2020</h3>
+                        <h3>Intermediate</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -247,13 +278,13 @@
                             <img src="./img/qtlogo.png" class="skill-icon" alt="">
                         </div>
                         <h2>QT</h2>
-                        <h3>2020-2020</h3>
+                        <h3>Novice</h3>
                     </div>
                 </div>
             </div>
 
             <div class="subtitle">
-                <h1>Extras:</h1>
+                <h1 id="languagesText2">Languages:</h1>
             </div>
             <div id="skills-list" class="row">
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -262,7 +293,7 @@
                             <img src="./img/english.png" class="skill-icon" alt="">
                         </div>
                         <h2 id="englishText">English</h2>
-                        <h3>Fluent</h3>
+                        <h3 id="fluentText">Fluent</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -271,7 +302,7 @@
                             <img src="./img/portuguese.png" class="skill-icon" alt="">
                         </div>
                         <h2 id="portugueseText">Portuguese</h2>
-                        <h3>Fluent</h3>
+                        <h3 id="fluentText2">Fluent</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -280,7 +311,7 @@
                             <img src="./img/french.png" class="skill-icon" alt="">
                         </div>
                         <h2 id="frenchText">French</h2>
-                        <h3>Advanced</h3>
+                        <h3 id="advancedText">Advanced</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -289,7 +320,7 @@
                             <img src="./img/spanish.png" class="skill-icon" alt="">
                         </div>
                         <h2 id="spanishText">Spanish</h2>
-                        <h3>Advanced</h3>
+                        <h3 id="advancedText2">Advanced</h3>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -298,18 +329,62 @@
                             <img src="./img/german.png" class="skill-icon" alt="">
                         </div>
                         <h2 id="germanText">German</h2>
-                        <h3>Beginner</h3>
+                        <h3 id="beginnerText">Beginner</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="subtitle">
+                <h1 id="certificatesText">Certificates:</h1>
+            </div>
+            <div id="skills-list" class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                    <div id="skills-item">
+                        <div class="imgcircle">
+                            <img src="./img/coursera.png" class="skill-icon" alt="">
+                        </div>
+                        <h2>Algorithmic Toolbox</h2>
+                        <h3>Univeristy of California San Diego</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                    <div id="skills-item">
+                        <div class="imgcircle">
+                            <img src="./img/coursera.png" class="skill-icon" alt="">
+                        </div>
+                        <h2>HTML, CSS and Javascript</h2>
+                        <h3>John Hopkins University</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                    <div id="skills-item">
+                        <div class="imgcircle">
+                            <img src="./img/ilead.png" class="skill-icon" alt="">
+                        </div>
+                        <h2>Managing People and Teams</h2>
+                        <h3>Troost ILead</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                    <div id="skills-item">
+                        <div class="imgcircle">
+                            <img src="./img/coursera.png" class="skill-icon" alt="">
+                        </div>
+                        <h2>Succesful Negotiation</h2>
+                        <h3>University of Michigan</h3>
                     </div>
                 </div>
             </div>
     </section>
 
     <!-- Community -->
-    <section id="4" class="community">
+    <section id="4" class="sectionArea">
         <div id="box-community" class="container">
             <div class="communityHeader">
-                <h1 id="volunteeringText0" class="community-title">Volunteering & Social</h1>
-                <p id="volunteeringText1" >Community participation is very important in achieving social justice and creating a supportive,
+                <h1 id="volunteeringText0" class="index-title">Volunteering & Social</h1>
+                <p id="volunteeringText1">Community participation is very important in achieving social justice and
+                    creating a supportive,
                     positive environment. I have always looked for opportunities to support my communities and believe
                     that it was this path that strengthened my leadership skills and highlighted the importance of my
                     role in my communities. In this sense, I know that these activities will bring me one step closer to
@@ -319,6 +394,24 @@
             <div id="community-list" class="row">
                 <div id="community-struct" class="col-lg-4 col-md-12 col-sm-12 col-xs-6">
                     <div class="community-pic">
+                        <img src="./img/frosh.JPG" alt="">
+                    </div>
+                </div>
+                <div id="community-struct" class="col-lg-8 col-md-12 col-sm-12 col-xs-6">
+                    <div id="community-item">
+                        <h2 id="froshText0">Engineering Frosh Week - Leader</h2>
+                        <ul>
+                            <li id="froshText1">Introduced incoming students to the Univeristy of Toronto's campus and
+                                the Faculty of Applied Science &
+                                Engineering's values, traditions, and culture.</li>
+                            <li id="froshText2"> Lead a group of 44 first-year students throughout the Orientation program.</li>
+                            <li id="froshText3"> Role model appropiate academic and social behaviours to incoming students and helped
+                                them transition from high school to university.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="community-struct" class="col-lg-4 col-md-12 col-sm-12 col-xs-6">
+                    <div class="community-pic">
                         <img src="./img/brasa.JPG" alt="">
                     </div>
                 </div>
@@ -326,9 +419,11 @@
                     <div id="community-item">
                         <h2 id="brasaText0">BRASA - DIRECTOR OF COMMUNICATIONS</h2>
                         <ul>
-                            <li id="brasaText1">Implemented marketing and advertising strategies to expand the club’s influence within
+                            <li id="brasaText1">Implemented marketing and advertising strategies to expand the club’s
+                                influence within
                                 the University of Toronto's campus</li>
-                            <li id="brasaText2">Managed social media pages to promote and organize events for Brazilian students in
+                            <li id="brasaText2">Managed social media pages to promote and organize events for Brazilian
+                                students in
                                 Toronto</li>
                         </ul>
                     </div>
@@ -342,10 +437,12 @@
                     <div id="community-item">
                         <h2 id="smcText0">St. Michael's College - House President</h2>
                         <ul>
-                            <li id="smcText1">Planned and hosted various house events and meetings to promote social wellbeing on
+                            <li id="smcText1">Planned and hosted various house events and meetings to promote social
+                                wellbeing on
                                 residence.</li>
-                            <li id="smcText2">Helped to create a supportive, inclusive residence community that encourages involvement
-                                and respect</li>
+                            <li id="smcText2">Helped to create a supportive, inclusive residence community that
+                                encouraged involvement
+                                and respect.</li>
                         </ul>
                     </div>
                 </div>
@@ -358,7 +455,8 @@
                     <div id="community-item">
                         <h2 id="eceText0">Electrical and Computer Engineering Club - Finance Director</h2>
                         <ul>
-                            <li id="eceText1">Created and monitored a budget of $42000 for all club expenses during the 2018-2019
+                            <li id="eceText1">Created and monitored a budget of $42000 for all club expenses during the
+                                2018-2019
                                 academic year.</li>
                         </ul>
                     </div>
@@ -372,9 +470,13 @@
                     <div id="community-item">
                         <h2 id="notlText0">Niagara-on-the-lake Soccer Club - Captain</h2>
                         <ul>
-                            <li id="notlText1">Developed a strong work ethic and perseverance to uphold team standards.</li>
-                            <li id="notlText2">Communicated with a diverse group of athletes, coaches, and game officials for
+                            <li id="notlText1">Developed a strong work ethic and perseverance to uphold team standards.
+                            </li>
+                            <li id="notlText2">Communicated with a diverse group of athletes, coaches, and game
+                                officials for
                                 conflict resolution and fairness in the sport.</li>
+                            <li id="notlText3">Helped the team reach and win the 2017 Niagara Region Cup.</li>
+                            <li id="notlText4">Team's Top Scorer for the 2016 season.</li>
                         </ul>
                     </div>
                 </div>
@@ -383,10 +485,10 @@
     </section>
 
     <!-- Education & Courses -->
-    <section id="5" class="education">
+    <section id="5" class="sectionArea">
         <div id="box-education" class="container">
             <div class="educationHeader">
-                <h1 id="myeducationText" class="education-title">Education & Courses</h1>
+                <h1 id="myeducationText" class="index-title">Education & Courses</h1>
             </div>
 
             <div id="project-list" class="row">

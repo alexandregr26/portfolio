@@ -1,14 +1,25 @@
 // Isotope Animation
 $(document).ready(function () {
 
-    let $btns = $('.projects .button-group button');
+    $(window).click(function (e) {
+        var spanX = (e.target);
+
+        if (spanX.id != "list") {
+            if ($(".navbar-collapse").hasClass("show")) {
+                $('.navbar-collapse').removeClass("show");
+            }
+        }
+
+    });
+
+    let $btns = $('.button-group button');
 
     $btns.click(function (e) {
-        $('.projects .button-group button').removeClass('active');
+        $('.button-group button').removeClass('active');
         e.target.classList.add('active');
 
         let selector = $(e.target).attr('data-filter');
-        $('.projects .row').isotope({
+        $('#project-list').isotope({
             filter: selector
         });
 
@@ -35,31 +46,42 @@ var en = {
     electrical: "Electrical",
     software: "Software",
     others: "Others",
-    skills0: "Skills & Experience",
+    skills0: "Skills & Certificates",
     skills1: "Due to the different nature of my past and current projects, I have mastered and gained familiarity with a variety of tools. I am always looking to improve my current skills, and I am open to learning new ones.",
-    languages: "Languages:",
+    languages: "Programming Languages:",
+    languages2: "Languages: ",
     english: "English",
     portuguese: "Portuguese",
     french: "French",
     spanish: "Spanish",
     german: "German",
+    fluent: "Fluent",
+    advanced: "Advanced",
+    beginner: "Beginner",
+    certificates: " Certificates",
     volunteering0: "VOLUNTEERING & SOCIAL",
     volunteering1: "Community participation is very important in achieving social justice and creating a supportive, positive environment. I have always looked for opportunities to support my communities and believe that it was this path that strengthened my leadership skills and highlighted the importance of my role in my communities. In this sense, I know that these activities will bring me one step closer to achieving my long-term goals. These goals consist of being successful academically and becoming a responsible, positive contributor to society.",
+    frosh0: "ENGINEERING FROSH WEEK - HEAD LEADER",
+    frosh1: "Introduced incoming students to the Univeristy of Toronto's campus and the Faculty of Applied Science & Engineering's values, traditions, and culture.",
+    frosh2: "Lead a group of 44 first-year students throughout the Orientation program.",
+    frosh3: "Role model appropriate academic and social behaviours to the incoming students and helped them transition from high school to university.",
     brasa0: "BRASA - DIRECTOR OF COMMUNICATIONS",
-    brasa1: "Implemented marketing and advertising strategies to expand the club’s influence within the University of Toronto's campus",
-    brasa2: "Managed social media pages to promote and organize events for Brazilian students in Toronto",
+    brasa1: "Implemented marketing and advertising strategies to expand the club’s influence within the University of Toronto's campus.",
+    brasa2: "Managed social media pages to promote and organize events for Brazilian students in Toronto.",
     smc0: "ST. MICHAEL'S COLLEGE - HOUSE PRESIDENT",
     smc1: "Planned and hosted various house events and meetings to promote social wellbeing on residence.",
-    smc2: "Helped to create a supportive, inclusive residence community that encourages involvement and respect",
+    smc2: "Helped to create a supportive, inclusive residence community that encouraged involvement and respect.",
     ece0: "ELECTRICAL AND COMPUTER ENGINEERING CLUB - FINANCE DIRECTOR",
     ece1: "Created and monitored a budget of $42000 for all club expenses during the 2018-2019 academic year.",
     notl0: "NIAGARA-ON-THE-LAKE SOCCER CLUB - CAPTAIN",
     notl1: "Developed a strong work ethic and perseverance to uphold team standards.",
     notl2: "Communicated with a diverse group of athletes, coaches, and game officials for conflict resolution and fairness in the sport.",
+    notl3: "Helped the team reach and win the 2017 Niagara Region Cup.",
+    notl4: "Team's Top Scorer of the 2016 season.",
     myeducation: "EDUCATION & COURSES",
-    firstyear:"First Year",
-    secondyear:"Second Year",
-    thirdyear:"Third Year"
+    firstyear: "First Year",
+    secondyear: "Second Year",
+    thirdyear: "Third Year"
 }
 
 var fr = {
@@ -82,14 +104,23 @@ var fr = {
     others: "Autres",
     skills0: "Outils",
     skills1: "En raison de la nature différente de mes projets passés et actuels, j'ai maîtrisé et pris connaissance d'une variété d'outils. Je cherche toujours à améliorer mes compétences actuelles et je suis ouvert à en apprendre de nouvelles.",
-    languages: "Langues:",
+    languages: "Langages de Programmation:",
+    languages2: "Langues: ",
     english: "Anglais",
     portuguese: "Portugais",
     french: "Français",
     spanish: "Espagnol",
     german: "Allemand",
+    fluent: "Courant",
+    advanced: "Avancée",
+    beginner: "Débutant",
+    certificates: "Certificats",
     volunteering0: "BÉNÉVOLAT ET SOCIAL",
     volunteering1: "La participation communautaire est très importante pour atteindre la justice sociale et créer un environnement positif. J'ai toujours cherché des opportunités pour soutenir mes communautés et je crois que c'est cette voie qui a renforcé mes compétences en leadership et souligné l'importance de mon rôle dans mes communautés. En ce sens, je sais que ces activités me rapprocheront un peu plus de la réalisation de mes objectifs à long terme. Ces objectifs consistent à réussir sur le plan académique et à devenir un contributeur responsable et positif à la société.",
+    frosh0: "ENGINEERING FROSH WEEK - CHEF",
+    frosh1: "J'ai présenté aux nouveaux étudiants le campus de l'Université de Toronto et les valeurs, traditions et culture de la Faculty of Applied Science & Engineering.",
+    frosh2: "J'ai dirigé un groupe de 44 étudiants de première année tout au long du programme d'orientation.",
+    frosh3: "J'ai montré les comportements scolaires et sociaux appropriés aux étudiants entrants et les aider à passer du lycée à l'université.",
     brasa0: "BRASA - Directeur des Communications",
     brasa1: "J'ai mis en œuvre de stratégies de marketing et de publicité pour étendre l'influence du club sur le campus de l'Université de Toronto.",
     brasa2: "J'ai géré des pages de médias sociaux pour promouvoir et organiser des événements pour les étudiants brésiliens à Toronto.",
@@ -101,10 +132,12 @@ var fr = {
     notl0: "NIAGARA-ON-THE-LAKE SOCCER CLUB - Capitaine",
     notl1: "J'ai développé une solide éthique de travail et de la persévérance pour respecter les normes de l'équipe.",
     notl2: "J'ai communiqué avec un groupe diversifié d'athlètes, d'entraîneurs et d'officiels de match pour la résolution des conflits et l'équité dans le sport.",
+    notl3: "J'ai aidé l'équipe à atteindre et à gagner la Niagara Region Cup 2017.",
+    notl4: "Meilleur buteur de l'équipe de la saison 2016.",
     myeducation: "FORMATION ET COURS",
-    firstyear:"Première Année",
-    secondyear:"Deuxième Année",
-    thirdyear:"Troisième Année"
+    firstyear: "Première Année",
+    secondyear: "Deuxième Année",
+    thirdyear: "Troisième Année"
 }
 
 var pt = {
@@ -125,31 +158,42 @@ var pt = {
     electrical: "Elétrica",
     software: "Software",
     others: "Outros",
-    skills0: "Ferramentas & Experiencias",
+    skills0: "Ferramentas & Certificados",
     skills1: "Devido à natureza diferente de meus projetos anteriores e atuais, dominei e ganhei familiaridade com uma variedade de ferramentas. Estou sempre procurando melhorar minhas habilidades atuais e estou aberto para aprender novas.",
-    languages: "Línguas:",
+    languages: "Linguagens de Programação:",
+    languages2: "Línguas: ",
     english: "Inglês",
     portuguese: "Portugues",
     french: "Francês",
     spanish: "Espanhol",
     german: "Alemão",
+    fluent: "Fluente",
+    advanced: "Avançado",
+    beginner: "Iniciante",
+    certificates: " Certificados",
     volunteering0: "Serviços Sociais",
     volunteering1: "A participação na comunidade é muito importante para alcançar a justiça social e criar um ambiente positivo. Sempre busquei oportunidades de apoiar minhas comunidades e acredito que foi esse caminho que fortaleceu minhas habilidades de liderança e me fez perceber a importância do meu papel em minhas comunidades. Nesse sentido, sei que essas atividades me levarão um passo mais perto de alcançar meus objetivos de longo prazo. Esses objetivos consistem em ter sucesso acadêmico e se tornar um contribuinte responsável e positivo para a sociedade.",
+    frosh0: "ENGINEERING FROSH WEEK - LÍDER",
+    frosh1: "Apresentei o campus da Universidade de Toronto e os valores, tradições e cultura do departamento de Engenharia para os novos alunos.",
+    frosh2: "Liderei um grupo de 44 alunos do primeiro ano ao longo do programa de Orientação.",
+    frosh3: "Mostrei um modelo de comportamento acadêmico e social apropriado para os novos alunos e os ajudei na transição do ensino médio para a universidade.",
     brasa0: "BRASA - DIRETOR DE COMUNICAÇÕES",
     brasa1: "Implementei estratégias de marketing e publicidade para expandir a influência do clube dentro do campus da Universidade de Toronto.",
     brasa2: "Gerenciei páginas de mídia sociais do time para promover e organizar eventos para estudantes brasileiros em Toronto.",
     smc0: "ST. MICHAEL'S COLLEGE - Presidente",
     smc1: "Planejei vários eventos e reuniões na casa para promover o bem-estar social na residência.",
-    smc2: "Ajudei a criar uma comunidade residencial inclusiva e solidária que incentiva o envolvimento e o respeito.",
+    smc2: "Ajudei a criar uma comunidade residencial inclusiva e solidária que incentivava o envolvimento e o respeito.",
     ece0: "ELECTRICAL AND COMPUTER ENGINEERING CLUB - DIRETOR DE FINANÇAS",
     ece1: "Criei e monitorei um orçamento de $ 42.000 para todas as despesas do clube durante o ano acadêmico de 2018-2019.",
     notl0: "NIAGARA-ON-THE-LAKE SOCCER CLUB - Capitão",
     notl1: "Desenvolvi uma forte ética de trabalho e perseverança para manter os padrões da equipe.",
     notl2: "Comuniquei com um grupo diversificado de atletas, treinadores e oficiais de jogo para resolução de conflitos e justiça no esporte.",
+    notl3: "Ajudei a equipe a alcançar e ganhar a Niagara Region Cup em 2017.",
+    notl4: "Artilheiro da equipe na temporada 2016.",
     myeducation: "Educação e Cursos",
-    firstyear:"Primeiro Ano",
-    secondyear:"Segundo Ano",
-    thirdyear:"Terceiro Ano"
+    firstyear: "Primeiro Ano",
+    secondyear: "Segundo Ano",
+    thirdyear: "Terceiro Ano"
 }
 
 var es = {
@@ -170,16 +214,25 @@ var es = {
     electrical: "Eléctrica",
     software: "Software",
     others: "Otros",
-    skills0: "Herramientas & Experiencia",
+    skills0: "Herramientas & Certificados",
     skills1: "Debido a la naturaleza diferente de mis proyectos pasados ​​y actuales, he dominado y familiarizado con una variedad de herramientas. Siempre busco mejorar mis habilidades actuales y estoy abierto a aprender nuevas.",
-    languages: "Idiomas:",
+    languages: "Lenguajes de Programación: ",
+    languages2: "Idiomas: ",
     english: "Inglés",
     portuguese: "Portugués",
     french: "Francés",
     spanish: "Español",
     german: "Alemán",
+    fluent: "Fluido",
+    advanced: "Avanzado",
+    beginner: "Principiante",
+    certificates: " Certificados",
     volunteering0: "Servicios Voluntariados & Sociales",
     volunteering1: "La participación de la comunidad es muy importante para lograr la justicia social y crear un entorno positivo y de apoyo. Siempre he buscado oportunidades para apoyar a mis comunidades y creo que fue este camino el que fortaleció mis habilidades de liderazgo y resaltó la importancia de mi rol en mis comunidades. En este sentido, sé que estas actividades me acercarán un paso más al logro de mis objetivos a largo plazo. Estos objetivos consisten en tener éxito académico y convertirse en un contribuyente responsable y positivo a la sociedad.",
+    frosh0: "ENGINEERING FROSH WEEK - LÍDER",
+    frosh1: "Presenté a los estudiantes entrantes el campus de la Universidad de Toronto y los valores, tradiciones y cultura de la Faculty of Applied Science & Engineering",
+    frosh2: "Diriji un grupo de 44 estudiantes a lo largo del programa de Orientación.",
+    frosh3: "Mostré un modelo de comportamiento académico y social apropiado para los estudiantes y los ayudé en la transición de la escuela secundaria a la universidad.",
     brasa0: "BRASA - Director de Comunicaciones",
     brasa1: "Implementé estrategias de marketing y publicidad para expandir la influencia del club dentro del campus de la Universidad de Toronto.",
     brasa2: "Gestioné páginas de redes sociales para promover y organizar eventos para estudiantes Brasileños en Toronto.",
@@ -191,36 +244,59 @@ var es = {
     notl0: "NIAGARA-ON-THE-LAKE SOCCER CLUB - Capitán",
     notl1: "Desarrollé una sólida ética de trabajo y perseverancia para mantener los estándares del equipo.",
     notl2: "Me comuniqué con un grupo diverso de atletas, entrenadores y oficiales del juego para la resolución de conflictos y la equidad en el deporte.",
+    notl3: "Ayudé al equipo a alcanzar y ganar la Niagara Region Cup 2017.",
+    notl4: "Máximo goleador del equipo de la temporada 2016.",
     myeducation: "EDUCACIÓN Y CURSOS",
-    firstyear:"Primer Año",
-    secondyear:"Segundo Año",
-    thirdyear:"Tercer Año"
+    firstyear: "Primer Año",
+    secondyear: "Segundo Año",
+    thirdyear: "Tercer Año"
 }
 
 // Standard Setup
-var lang = en;
+var lang = 0;
+var langData = localStorage.getItem("langData");
+
+if (langData == "fr") {
+    lang = fr;
+    document.getElementById("list").value = langData;
+} else if (langData == "pt") {
+    lang = pt;
+    document.getElementById("list").value = langData;
+} else if (langData == "es") {
+    lang = es;
+    document.getElementById("list").value = langData;
+} else {
+    lang = en;
+}
+
 updateLanguage();
 
 // Select Item Physics
 function getSelectValue() {
     var selectedValue = document.getElementById("list").value;
-    console.log(selectedValue + " Mate");
     lang = selectedValue;
     if (lang === "en") {
         lang = en;
+        langData = "en";
+        localStorage.setItem("langData", langData);
     } else if (lang === "fr") {
         lang = fr;
+        langData = "fr";
+        localStorage.setItem("langData", langData);
     } else if (lang === "pt") {
         lang = pt;
+        langData = "pt";
+        localStorage.setItem("langData", langData);
     } else if (lang === "es") {
         lang = es;
+        langData = "es";
+        localStorage.setItem("langData", langData);
     }
     updateLanguage();
 }
 
 // Update Changes
 function updateLanguage() {
-    console.log(document.getElementById("aboutText").innerHTML);
     document.getElementById("aboutText").innerHTML = lang.about;
     document.getElementById("workText").innerHTML = lang.work;
     document.getElementById("skillsText").innerHTML = lang.skills;
@@ -241,13 +317,24 @@ function updateLanguage() {
     document.getElementById("skillsText0").innerHTML = lang.skills0;
     document.getElementById("skillsText1").innerHTML = lang.skills1;
     document.getElementById("languagesText").innerHTML = lang.languages;
+    document.getElementById("languagesText2").innerHTML = lang.languages2;
     document.getElementById("englishText").innerHTML = lang.english;
     document.getElementById("portugueseText").innerHTML = lang.portuguese;
     document.getElementById("frenchText").innerHTML = lang.french;
     document.getElementById("spanishText").innerHTML = lang.spanish;
     document.getElementById("germanText").innerHTML = lang.german;
+    document.getElementById("fluentText").innerHTML = lang.fluent;
+    document.getElementById("fluentText2").innerHTML = lang.fluent;
+    document.getElementById("advancedText").innerHTML = lang.advanced;
+    document.getElementById("advancedText2").innerHTML = lang.advanced;
+    document.getElementById("beginnerText").innerHTML = lang.beginner;
+    document.getElementById("certificatesText").innerHTML = lang.certificates;
     document.getElementById("volunteeringText0").innerHTML = lang.volunteering0;
     document.getElementById("volunteeringText1").innerHTML = lang.volunteering1;
+    document.getElementById("froshText0").innerHTML = lang.frosh0;
+    document.getElementById("froshText1").innerHTML = lang.frosh1;
+    document.getElementById("froshText2").innerHTML = lang.frosh2;
+    document.getElementById("froshText3").innerHTML = lang.frosh3;
     document.getElementById("brasaText0").innerHTML = lang.brasa0;
     document.getElementById("brasaText1").innerHTML = lang.brasa1;
     document.getElementById("brasaText2").innerHTML = lang.brasa2;
@@ -255,10 +342,12 @@ function updateLanguage() {
     document.getElementById("smcText1").innerHTML = lang.smc1;
     document.getElementById("smcText2").innerHTML = lang.smc2;
     document.getElementById("eceText0").innerHTML = lang.ece0;
-    document.getElementById("eceText1").innerHTML = lang.ece1;  
+    document.getElementById("eceText1").innerHTML = lang.ece1;
     document.getElementById("notlText0").innerHTML = lang.notl0;
     document.getElementById("notlText1").innerHTML = lang.notl1;
     document.getElementById("notlText2").innerHTML = lang.notl2;
+    document.getElementById("notlText3").innerHTML = lang.notl3;
+    document.getElementById("notlText4").innerHTML = lang.notl4;
     document.getElementById("myeducationText").innerHTML = lang.myeducation;
     document.getElementById("firstyearText").innerHTML = lang.firstyear;
     document.getElementById("secondyearText").innerHTML = lang.secondyear;
