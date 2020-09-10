@@ -256,7 +256,11 @@ var es = {
 var lang = 0;
 var langData = localStorage.getItem("langData");
 
-if (langData == "fr") {
+if (langData == "en") {
+    lang = en;
+    document.getElementById("list").value = langData;
+}
+else if (langData == "fr") {
     lang = fr;
     document.getElementById("list").value = langData;
 } else if (langData == "pt") {
@@ -267,6 +271,7 @@ if (langData == "fr") {
     document.getElementById("list").value = langData;
 } else {
     lang = en;
+    getSelectValue();
 }
 
 updateLanguage();
