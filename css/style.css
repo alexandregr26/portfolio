@@ -735,6 +735,17 @@ footer.footer-area .social a>i{
         padding: 160px 0;
     }
 
+    #box-hhc-banner{
+        padding: 250px 0;
+    }
+
+    #box-splitz-banner{
+        padding: 250px 0;
+    }
+
+    #box-utat-banner{
+        padding: 250px 0;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 767px){
