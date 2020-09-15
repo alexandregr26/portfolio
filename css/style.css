@@ -733,18 +733,22 @@ footer.footer-area .social a>i{
 
     #box-mappa-banner{
         padding: 160px 0;
+        border-radius: 0px;
     }
 
     #box-hhc-banner{
         padding: 250px 0;
+        border-radius: 0px;
     }
 
     #box-splitz-banner{
         padding: 250px 0;
+        border-radius: 0px;
     }
 
     #box-utat-banner{
         padding: 250px 0;
+        border-radius: 0px;
     }
 }
 
