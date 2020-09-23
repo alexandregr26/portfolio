@@ -243,6 +243,18 @@ header .navbar .navbar-nav li > a:hover:after{
     background-size: cover;
 }
 
+#ece243{
+    background: url('../img/ece243.png') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#tanvas{
+    background: url('../img/tanvas.png') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
 #portfolio{
     background: url('../img/website.png') no-repeat;
     background-position: center;
@@ -390,7 +402,7 @@ footer.footer-area .social h5{
 }
 
 footer.footer-area .social a>i{
-    font-size: 30px;
+    font-size: 33px;
     padding: 1rem;
     color: white;
 }
@@ -653,6 +665,46 @@ footer.footer-area .social a>i{
     border-radius: 20px;
 }
 
+/* FPS PAGE */
+/* Banner */
+#box-fps-banner{
+    background: url(../img/de1soc.jpg);
+    background-size: 100% 100%;
+    padding: 300px 0;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+}
+
+.fps-subtitle{
+    font-size: 40px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px;
+}
+
+#box-fps{
+    padding: 50px 40px;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.imgboxMobile {
+    height: 100%;
+    display: none;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    padding: 40px 0;
+}
+
 /* Splitz PAGE */
 /* Banner */
 #box-splitz-banner{
@@ -750,6 +802,24 @@ footer.footer-area .social a>i{
         padding: 250px 0;
         border-radius: 0px;
     }
+
+    #box-fps-banner{
+        padding: 250px 0;
+        border-radius: 0px;
+    }
+
+    .imgbox{
+        display: none;
+    }
+
+    .imgboxMobile{
+        display: grid;
+    }
+
+    #mappa-team-item img{
+        width: 340px;
+        height: 340px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 767px){
@@ -781,6 +851,11 @@ footer.footer-area .social a>i{
 
     #box-mappa-banner{
         padding: 200px 0;
+    }
+
+    #mappa-team-item img{
+        width: 340px;
+        height: 340px;
     }
 
 }

@@ -73,6 +73,11 @@ var en = {
     smc2: "Helped to create a supportive, inclusive residence community that encouraged involvement and respect.",
     ece0: "ELECTRICAL AND COMPUTER ENGINEERING CLUB - FINANCE DIRECTOR",
     ece1: "Created and monitored a budget of $42000 for all club expenses during the 2018-2019 academic year.",
+    ece2: "Maintained financial records and handled the accounts of the ECE Club.",
+    ncdsb0: "NIAGARA CATHOLIC PILGRIMAGE - STUDENT VOLUNTEER",
+    ncdsb1: "Leveraged communication skills to collect funds for the building of schools in Haiti, infrastructure projects, and other resources to help break the cycle of poverty.",
+    ncdsb2: "Joined several other students in prayer services and Masses before and after a 15 kilometres walk.",
+    ncdsb3: "Over $150,000 was raised across the eight schools from the Niagara Catholic District School Board to help those in need.",
     notl0: "NIAGARA-ON-THE-LAKE SOCCER CLUB - CAPTAIN",
     notl1: "Developed a strong work ethic and perseverance to uphold team standards.",
     notl2: "Communicated with a diverse group of athletes, coaches, and game officials for conflict resolution and fairness in the sport.",
@@ -129,6 +134,11 @@ var fr = {
     smc2: "J'ai aidé à créer une communauté de résidence solidaire et solidaire qui encourage l'implication et le respect.",
     ece0: "ELECTRICAL AND COMPUTER ENGINEERING CLUB - Directeur des Finances",
     ece1: "J'ai créé et suivi un budget de 42000 $ pour toutes les dépenses du club au cours de l'année universitaire 2018-2019.",
+    ece2: "J'ai tenu des registres financiers et géré les comptes du ECE Club.",
+    ncdsb0: "NIAGARA CATHOLIC PILGRIMAGE - BÉNÉVOLAT",
+    ncdsb1: "J'ai utilisé mes compétences en communication pour collecter des fonds pour la construction d'écoles en Haïti, des projets d'infrastructure et d'autres ressources pour aider à briser le cycle de la pauvreté.",
+    ncdsb2: "J'ai rejoint plusieurs autres étudiants pour des services de prière et des messes avant et après une marche de 15 kilomètres.",
+    ncdsb3: "Plus de 150 000 $ ont été amassés pour les huit écoles du Niagara Catholic District School Board pour aider les élèves haïtiens.",
     notl0: "NIAGARA-ON-THE-LAKE SOCCER CLUB - Capitaine",
     notl1: "J'ai développé une solide éthique de travail et de la persévérance pour respecter les normes de l'équipe.",
     notl2: "J'ai communiqué avec un groupe diversifié d'athlètes, d'entraîneurs et d'officiels de match pour la résolution des conflits et l'équité dans le sport.",
@@ -185,6 +195,11 @@ var pt = {
     smc2: "Ajudei a criar uma comunidade residencial inclusiva e solidária que incentivava o envolvimento e o respeito.",
     ece0: "ELECTRICAL AND COMPUTER ENGINEERING CLUB - DIRETOR DE FINANÇAS",
     ece1: "Criei e monitorei um orçamento de $ 42.000 para todas as despesas do clube durante o ano acadêmico de 2018-2019.",
+    ece2: "Eu mantive registros financeiros e administrei as contas do ECE Club",
+    ncdsb0: "NIAGARA CATHOLIC PILGRIMAGE - ESTUDANTE VOLUNTÁRIO",
+    ncdsb1: "Usei minhas habilidades de comunicação para coletar fundos para a construção de escolas no Haiti, projetos de infraestrutura e outros recursos para ajudar a quebrar o ciclo da pobreza.",
+    ncdsb2: "Juntei-me a vários outros alunos para serviços de oração e missas antes e depois de uma caminhada de 15 quilômetros.",
+    ncdsb3: "Mais de $ 150.000 CAD foram arrecadados por oito escolas do Niagara Catholic District School Board para ajudar os alunos haitianos.",
     notl0: "NIAGARA-ON-THE-LAKE SOCCER CLUB - Capitão",
     notl1: "Desenvolvi uma forte ética de trabalho e perseverança para manter os padrões da equipe.",
     notl2: "Comuniquei com um grupo diversificado de atletas, treinadores e oficiais de jogo para resolução de conflitos e justiça no esporte.",
@@ -241,6 +256,11 @@ var es = {
     smc2: "Ayudé a crear una comunidad de residencia inclusiva y solidaria que fomenta la participación y el respeto.",
     ece0: "ELECTRICAL AND COMPUTER ENGINEERING CLUB - Director de Finanzas",
     ece1: "Creé y supervisé un presupuesto de $ 42000 para todos los gastos del club durante el año académico 2018-2019.",
+    ece2: "Mantuve registros financieros y manejé las cuentas del ECE Club.",
+    ncdsb0: "NIAGARA CATHOLIC PILGRIMAGE - VOLUNTARIO",
+    ncdsb1: "Usé mis habilidades de comunicación para recolectar fondos para la construcción de escuelas en Haití, proyectos de infraestructura y otros recursos para ayudar a romper el ciclo de la pobreza.",
+    ncdsb2: "Me uní a varios otros estudiantes para servicios de oración y misas antes y después de una caminata de 15 kilómetros.",
+    ncdsb3: "Recaudamos más de $ 150,000 CAD para ayudar a los estudiantes haitianos.",
     notl0: "NIAGARA-ON-THE-LAKE SOCCER CLUB - Capitán",
     notl1: "Desarrollé una sólida ética de trabajo y perseverancia para mantener los estándares del equipo.",
     notl2: "Me comuniqué con un grupo diverso de atletas, entrenadores y oficiales del juego para la resolución de conflictos y la equidad en el deporte.",
@@ -348,10 +368,15 @@ function updateLanguage() {
     document.getElementById("smcText2").innerHTML = lang.smc2;
     document.getElementById("eceText0").innerHTML = lang.ece0;
     document.getElementById("eceText1").innerHTML = lang.ece1;
+    document.getElementById("eceText2").innerHTML = lang.ece2;
     document.getElementById("notlText0").innerHTML = lang.notl0;
     document.getElementById("notlText1").innerHTML = lang.notl1;
     document.getElementById("notlText2").innerHTML = lang.notl2;
     document.getElementById("notlText3").innerHTML = lang.notl3;
+    document.getElementById("ncdsbText0").innerHTML = lang.ncdsb0;
+    document.getElementById("ncdsbText1").innerHTML = lang.ncdsb1;
+    document.getElementById("ncdsbText2").innerHTML = lang.ncdsb2;
+    document.getElementById("ncdsbText3").innerHTML = lang.ncdsb3;
     document.getElementById("notlText4").innerHTML = lang.notl4;
     document.getElementById("myeducationText").innerHTML = lang.myeducation;
     document.getElementById("firstyearText").innerHTML = lang.firstyear;
