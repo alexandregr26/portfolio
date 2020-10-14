@@ -1,6 +1,10 @@
 // Isotope Animation
 $(document).ready(function () {
 
+    window.addEventListener("hashchange", function () {
+        window.scrollTo(window.scrollX, window.scrollY - 80);
+    });
+
     $(window).click(function (e) {
         var spanX = (e.target);
 
