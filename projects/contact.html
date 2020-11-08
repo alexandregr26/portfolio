@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre's</title>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Boxicon Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div id="navbar-container" class="container">
+            <a class="navbar-brand" href="../index.html">
+                <h1 class="nav-logo">Alexandre Gouveia Rodrigues</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="aboutText" class="nav-link" href="../index.html#1">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a id="workText" class="nav-link" href="../index.html#2">Work<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="skillsText" class="nav-link" href="../index.html#3">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="communityText" class="nav-link" href="../index.html#4">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="educationText" class="nav-link" href="../index.html#5">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contactText" class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <select id="list" onchange="getSelectValue();">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                            <option value="pt">PT</option>
+                            <option value="es">ES</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <!-- <section class="contacting">
+        <div class="container">
+            <div class="contact-box">
+                <form name="contact-form" method="POST" action="./contactForm.php">
+                    <h2>Contact Me</h2>
+                    <input name="name" type="text" class="field" placeholder="Your Name" required>
+                    <input name="email" type="text" class="field" placeholder="Your Email" required>
+                    <input name="phone" type="text" class="field" placeholder="Phone" required>
+                    <textarea name="message" placeholder="Message" class="field"></textarea>
+                    <input name="send" type="submit" class="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="contacting">
+        <div class="container">
+            <div class="contact-box">
+                <form action="https://formspree.io/f/mdopendk" method="POST">
+                    <h2 id="contactMeText">Contact Me</h2>
+                    <input name="name" type="text" class="field" placeholder="Your Name" required>
+                    <input name="email" type="text" class="field" placeholder="Your Email" required>
+                    <input name="phone" type="text" class="field" placeholder="Phone" required>
+                    <textarea name="message" placeholder="Message" class="field"></textarea>
+                    <input name="send" type="submit" class="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/jquery.3.5.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/isotope.min.js"></script>
+    <script src="./contact.js"></script>
+</body>
+
+</html>

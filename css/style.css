@@ -1,0 +1,956 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sectionArea{
+    margin: 60px 0;
+}
+
+.index-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0px 12px 12px 0px;
+}
+
+/* Banner */
+#box-banner{
+    padding: 100px 0px 0px 0px;
+}
+
+#box-banner img{
+    width: 100%;
+}
+
+#box-banner #banner-struct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+#bannerContainerStruct{
+    padding: 0;
+    margin: 0;
+}
+
+#box-banner .bannertext h1{
+    font-weight: 600;
+    font-size: 90px;
+}
+
+#box-banner .bannertext h2{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+#box-banner .bannertext h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#box-banner .bannerbutton{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#box-banner .bannerbutton button{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #323232;
+    border: 2px solid red;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    transition: .4s ease;
+    transition-property: background-color, color;
+}
+
+#box-banner .bannerbutton button:focus{
+    outline: none;
+}
+
+#box-banner .bannerbutton button:hover{
+    color: white;
+    background-color: red;
+}
+
+#box-banner .bannerbutton button:before{
+    content: '';
+    background: grey;
+    opacity: .5s;
+    filter: blur(30px);
+}
+
+
+/* Header Section */
+header .navbar{
+    padding: 1rem;
+    background-color:white;
+}
+
+header nav .navbar-toggler{
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+header nav .navbar-toggler:hover{
+    background-color: #f2f2f2;   
+}
+
+header nav .navbar-toggler:focus {
+    outline:0;
+}
+
+header .navbar .navbar-brand{
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar .navbar-brand .nav-logo{
+    padding: 0.4rem 0 0 0;
+    margin-bottom: 0.4rem;
+    font-size: 17px;
+    font-weight: 600;
+    color: #323232;
+}
+
+header .navbar .navbar-collapse .nav-item{
+    padding: 0.4rem 1rem 0 1rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .navbar .navbar-collapse .nav-item .nav-link{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #323232;
+}
+
+#list{
+    padding-bottom: 3px;
+    padding-right: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #323232;
+    border: none;
+    cursor: pointer;
+}
+
+#list:focus {
+    outline:0;
+}
+
+#list option{
+    font-size: 15px;
+    font-weight: 500;
+    color: #323232;
+}
+
+header .navbar .navbar-nav li > a:after{
+    content: '';
+    display: block;
+    height: 2px;
+    border-radius: 26px;
+    background: red;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+
+header .navbar .navbar-nav li > a:hover:after{
+    transform: scaleX(1);
+    height: 2px;
+    transition: transform .4s;
+}
+
+
+/* Projects */
+.button-group button{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: black;
+    font-weight: 500;
+}
+.button-group button:active {
+    outline: none;
+    border: none;
+}
+    
+.button-group button:focus {
+    outline:0;
+    font-weight: bold;
+}
+
+#box-projects{
+    background: aliceblue;
+    padding: 40px 40px;
+    border-radius: 14px;
+}
+
+.projects-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0px 0px 12px 12px;
+}
+
+.project-item {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#mappa{
+    background: url('../img/Mappav2.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#splitz{
+    background: url('../img/Screenshot2ResizedCropped.png') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#ev{
+    background: url('../img/ev2.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#ece243{
+    background: url('../img/ece243.png') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#tanvas{
+    background: url('../img/tanvas.png') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#portfolio{
+    background: url('../img/website.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hhc{
+    background: url('../img/hhc.png') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#utat{
+    background: url('../img/utat.png') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#project-struct{
+    padding: 30px 30px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease;
+    background-color: #323232;
+  }
+  
+.project-item:hover .overlay {
+    opacity: 0.88;
+}
+  
+.text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.project-item:hover {
+    box-shadow: 0 4px 4px 4px #cccccc;
+}
+
+.project-item:hover h2{
+    opacity: 0.7;
+}
+
+/* Skills */
+#box-skills{
+    background: #ffe6e6;
+    padding: 40px 40px;
+    border-radius: 14px;
+}
+
+#skills-item {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#skills-item .skill-icon{
+    width: 50px;
+}
+
+.imgcircle{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  
+}
+
+#skills-item h2{
+    padding-top: 10px;
+    font-size: 26px;
+}
+
+#skills-item h3{
+    font-size: 14px;
+}
+
+.subtitle h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* About Me */
+#box-about{
+    background: #f2f2f2;
+    padding: 40px 40px;
+}
+
+.about{
+    margin-top: 0px;
+    background: #f2f2f2;
+}
+
+.about .about-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0px 12px 12px 0px;
+}
+
+.about p{
+    font-weight: 400;
+}
+
+/* Footer */
+footer.footer-area{
+    padding: 2rem 0;
+    background-color: #323232;
+}
+
+footer.footer-area .social h5{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+footer.footer-area .social a>i{
+    font-size: 33px;
+    padding: 1rem;
+    color: white;
+}
+
+/* Community */
+#box-community{
+    background: #ffffe6;
+    padding: 40px 40px;
+    border-radius: 14px;
+}
+
+.communityHeader p{
+    font-weight: 400;
+}
+
+#community-struct{
+    padding-top: 30px;
+}
+
+.community-pic img{
+    width: 100%;
+    height: 260px;
+}
+
+#community-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+#community-item h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#community-item li{
+    font-size: 18px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+/* Education */
+#box-education{
+    background: #ddfada;
+    padding: 40px 40px;
+    border-radius: 14px;
+}
+
+#education-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#education-item h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#education-item li{
+    font-size: 16px;
+    text-align: left;
+}
+
+#education-struct{
+    padding: 20px 20px;
+}
+
+/* ARROWS */
+.mapping{
+    padding-top: 80px;
+}
+
+.mapping-div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mapping-back{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#backText{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #323232;
+}
+
+.mapping-next{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#nextText{
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #323232;
+}
+
+.mapping #mapping-about .mapping-div a>i{
+    font-size: 36px;
+    color: #323232;
+}
+
+/* PROJECTS */
+/* Skills */
+.skills-project-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+
+#skills-project-list{
+    justify-content: center;
+}
+
+#project-skills-item {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#project-skills-item .skill-icon{
+    width: 55px;
+}
+
+#project-skills-item .skill-icon-ux-ui{
+    width: 80px;
+}
+
+#project-skills-item h2{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+/* MAPPA PAGE */
+/* Banner */
+#box-mappa-banner{
+    background: url(../img/mappaBanner.png);
+    background-size: 100% 100%;
+    padding: 240px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Team */
+.mappa-subtitle{
+    font-size: 40px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px;
+}
+
+#mappa-team-item{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#mappa-team-item h3{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px 0 0 0;
+}
+
+#mappa-team-item img{
+    width: 100%;
+    height: 340px;
+}
+
+/* Infrastructure */
+#box-infrastructure{
+    background: #323232;
+}
+
+.infrastructure{
+    padding: 60px 0;
+    background: #323232;
+}
+
+.infrastructure h1, .infrastructure p {
+    color: white;
+}
+
+/* UX / UI */
+.uxui{
+    margin: 60px 0;
+}
+
+.uxui img{
+    width: 94%;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.uxui #uxui-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.uxui .row h1{
+    color: #323232;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+/* HHC PAGE */
+/* Banner */
+#box-hhc-banner{
+    background: url(../img/hhc.png);
+    background-size: 100% 100%;
+    padding: 300px 0;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+}
+
+/* UTAT PAGE */
+/* Banner */
+#box-utat-banner{
+    background: url(../img/utatlpsbanner.png);
+    background-size: 100% 100%;
+    padding: 300px 0;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+}
+
+/* FPS PAGE */
+/* Banner */
+#box-fps-banner{
+    background: url(../img/de1soc.jpg);
+    background-size: 100% 100%;
+    padding: 300px 0;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+}
+
+.fps-subtitle{
+    font-size: 40px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px;
+}
+
+#box-fps{
+    padding: 50px 40px;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.imgboxMobile {
+    height: 100%;
+    display: none;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* Splitz PAGE */
+/* Banner */
+#box-splitz-banner{
+    background: url(../img/splitzBanner.png);
+    background-size: 100% 100%;
+    padding: 300px 0;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+}
+
+.splitzbutton{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.splitzbutton button{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #323232;
+    border: 2px solid red;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    transition: .4s ease;
+    transition-property: background-color, color;
+}
+
+.splitzbutton button:focus{
+    outline: none;
+}
+
+.splitzbutton button:hover{
+    color: white;
+    background-color: red;
+}
+
+.splitzbutton button:before{
+    content: '';
+    background: grey;
+    opacity: .5s;
+    filter: blur(30px);
+}
+
+.contact-box{
+    width: 80%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-45%);
+	align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    padding: 30px 40px;
+    border-radius: 14px;
+}
+
+.contact-box h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 20px;
+}
+
+.contact-box h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 220px;
+    border-radius: 2px;
+    background-color: red;
+}
+
+.contact-box .field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.contact-box .field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-box textarea{
+    min-height: 150px;
+    resize: none;
+}
+
+.contact-box .submit{
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    padding: 0.5rem 1rem;
+    background-color: red;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+	cursor: pointer;
+    transition: .3s;
+    margin-bottom: 22px;
+}
+
+.contact-box .submit:hover{
+    background-color: #e50000;
+}
+
+.contact-box .field:focus{
+    border: 2px solid red;
+}
+
+/* Responsiveness */ 
+@media (max-width: 600px){
+    #box-banner #banner-struct{
+        text-align: center;
+    }
+
+    #box-banner .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #box-banner .bannertext h1{
+        font-weight: 600;
+        font-size: 14vw;
+    }
+    
+    #box-banner .bannertext h2{
+        margin-top: 20px;
+        font-size: 6vw;
+        font-weight: 400;
+        margin-bottom: 1px;
+    }
+    
+    #box-banner .bannertext h3{
+        display: none;
+    }
+
+    #box-banner .bannerbutton{
+        display: none;
+    }
+
+    #box-mappa-banner{
+        padding: 160px 0;
+        border-radius: 0px;
+    }
+
+    #box-hhc-banner{
+        padding: 250px 0;
+        border-radius: 0px;
+    }
+
+    #box-splitz-banner{
+        padding: 250px 0;
+        border-radius: 0px;
+    }
+
+    #box-utat-banner{
+        padding: 250px 0;
+        border-radius: 0px;
+    }
+
+    #box-fps-banner{
+        padding: 250px 0;
+        border-radius: 0px;
+    }
+
+    .imgbox{
+        display: none;
+    }
+
+    .imgboxMobile{
+        display: grid;
+    }
+
+    #mappa-team-item img{
+        width: 340px;
+        height: 340px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px){
+    #box-banner #banner-struct{
+        text-align: center;
+    }
+
+    #box-banner .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #box-banner .bannertext h1{
+        font-weight: 600;
+        font-size: 14vw;
+    }
+    
+    #box-banner .bannertext h2{
+        font-size: 5vw;
+    }
+    
+    #box-banner .bannertext h3{
+        font-size: 4vw;
+    }
+
+    #box-banner .bannerbutton{
+        margin-bottom: 40px;
+    }
+
+    #box-mappa-banner{
+        padding: 200px 0;
+    }
+
+    #mappa-team-item img{
+        width: 340px;
+        height: 340px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1030px){
+    header .navbar,
+    header .navbar .navbar-brand
+    {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    #box-banner .bannertext h1{
+        font-size: 70px;
+    }
+    
+    #box-banner .bannertext h2{
+        font-size: 29px;
+    }
+    
+    #box-banner .bannertext h3{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre's</title>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Boxicon Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div id="navbar-container" class="container">
+            <a class="navbar-brand" href="../index.html">
+                <h1 class="nav-logo">Alexandre Gouveia Rodrigues</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="aboutText" class="nav-link" href="../index.html#1">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a id="workText" class="nav-link" href="../index.html#2">Work<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="skillsText" class="nav-link" href="../index.html#3">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="communityText" class="nav-link" href="../index.html#4">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="educationText" class="nav-link" href="../index.html#5">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contactText" class="nav-link" href="../index.html#6">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <select id="list" onchange="getSelectValue();">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                            <option value="pt">PT</option>
+                            <option value="es">ES</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<body>
+    <!-- Previous & Next Button -->
+    <section class="mapping">
+        <div id="mapping-about" class="container">
+            <div class="mapping-div">
+                <div class="mapping-back">
+                    <a href="../index.html"><i class='bx bx-left-arrow-alt'></i></a>
+                    <div id="backText">Previous</div>
+                </div>
+                <div class="mapping-next">
+                    <div id="nextText">Next</div>
+                    <a href="../projects/hhc.html"><i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <section id="mappa-banner">
+        <div id="box-mappa-banner" class="container">
+            <h1 id="MappaText">Mappa</h1>
+            <h2 id="gisText">Geographic Information System</h2>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="3" class="project-skills">
+        <div id="box-project-skills" class="container">
+            <div class="skillsHeader">
+                <h1 id="skillsToolsUsedText" class="skills-project-title">Skills & Tools Used</h1>
+            </div>
+            <div id="skills-project-list" class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <div id="project-skills-item">
+                        <div class="imgcircle">
+                            <img src="../img/c++logo.png" class="skill-icon" alt="">
+                        </div>
+                        <h2>C++</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <div id="project-skills-item">
+                        <div class="imgcircle">
+                            <img src="../img/communication.png" class="skill-icon" alt="">
+                        </div>
+                        <h2>Communication</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <div id="project-skills-item">
+                        <div class="imgcircle">
+                            <img src="../img/git.png" class="skill-icon" alt="">
+                        </div>
+                        <h2>Git</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <div id="project-skills-item">
+                        <div class="imgcircle">
+                            <img src="../img/osm.png" class="skill-icon" alt="">
+                        </div>
+                        <h2>OSM's API</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <div id="project-skills-item">
+                        <div class="imgcircle">
+                            <img src="../img/teamwork.jpg" class="skill-icon" alt="">
+                        </div>
+                        <h2>Teamwork</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <div id="project-skills-item">
+                        <div class="imgcircle">
+                            <img src="../img/uxui2.png" class="skill-icon-ux-ui" alt="">
+                        </div>
+                        <h2>UX & UI</h2>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Project Info -->
+    <section class="about">
+        <div id="box-about" class="container">
+            <h1 id="projectInfoText0" class="mappa-subtitle">Project Information</h1>
+            <div class="row">
+                <div id="community-struct" class="col-lg-6 col-md-6 col-sm-12 col-xs-6">
+                    <div id="community-item">
+                        <p id="projectInfoText1"> This project was part of the University of Toronto's Engineering second-year design course ECE297, and it involved designing and completing a working
+                            application
+                            similar to Google Maps in a team, and communicating effectively with both technical
+                            supervisors and less technical
+                            clients.</p>
+                    </div>
+                </div>
+                <div id="community-struct" class="col-lg-6 col-md-6 col-sm-12 col-xs-6">
+                    <div id="community-item">
+                        <p id="projectInfoText2"> .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="sectionArea">
+        <div id="box-mappa" class="container">
+            <h1 id="teamText0" class="mappa-subtitle">Team & Strategy</h1>
+            <div id="community-list" class="row">
+                <div id="community-struct" class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                    <div id="community-item">
+                        <p id="teamText1">Forming the team was the first stage of this project. In this stage, all group
+                            members became
+                            acquainted and agreed on the project goals, created a team charter, and established
+                            individual roles. The group
+                            prioritized a clear communication system, both personal and technical, to increase
+                            the individual effort of every member and the willingness to cooperate. Weekly meetings were
+                            held and Git, a version
+                            control software tool, was chosen to help manage the source code of the project and prevent
+                            concurrent work from conflicting.</p>
+                    </div>
+                </div>
+                <div id="community-struct" class="col-lg-4 col-md-12 col-sm-12 col-xs-6">
+                    <div id="mappa-team-item">
+                        <img src="../img/pratishmappa.png" alt="">
+                        <h3>Pratish Dalal</h3>
+                    </div>
+                </div>
+                <div id="community-struct" class="col-lg-4 col-md-12 col-sm-12 col-xs-6">
+                    <div id="mappa-team-item">
+                        <img src="../img/alexmappa.png" alt="">
+                        <h3>Alexandre Gouveia</h3>
+                    </div>
+                </div>
+                <div id="community-struct" class="col-lg-4 col-md-12 col-sm-12 col-xs-6">
+                    <div id="mappa-team-item">
+                        <img src="../img/marcosmappa.png" alt="">
+                        <h3>Marcos Madrigal</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure -->
+    <section class="infrastructure">
+        <div id="box-infrastructure" class="container">
+            <h1 id="infrastructureText0" class="mappa-subtitle">Building the Infrastructure</h1>
+            <div class="row">
+                <div id="community-struct" class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                    <p id="infrastructureText1"> The first part for this project was to take advantage of two APIS that
+                        allowed us
+                        to query
+                        a geographic information database for information such as street names
+                        and intersection locations. To accomplish this, functions and data structures
+                        were created and implemented to store and retrieve data.</p>
+                </div>
+                <div id="community-struct" class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                    <!-- HTML generated using hilite.me -->
+                    <div
+                        style="background: #323232; overflow:auto;width:auto;border:none;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                        <pre style="margin: 0; line-height: 125%"><span style="color: orange">#include &quot;StreetsDatabaseAPI.h&quot;</span>
+<span style="color: orange">#include &quot;OSMDatabaseAPI.h&quot;</span>
+<span style="color: orange">#include &quot;globals.h&quot;</span>
+<span style="color: orange">#include &lt;math.h&gt;</span>
+<span style="color: orange">#include &lt;chrono&gt;</span>
+<span style="color: orange">#include &lt;map&gt;</span>
+
+<span style="color: #66d9ef">using</span> <span style="color: #66d9ef">namespace</span> <span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">chrono;</span>
+
+<span style="color: yellow">//Global variables</span>
+<span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">NumOfStreets;</span>
+<span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">NumOfStreetSegments;</span>
+<span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #66d9ef">int</span><span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">IntersectionsOfMap;</span>
+<span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #66d9ef">int</span><span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">AdjacentIntersections;</span>
+<span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">string</span><span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">StreetNamesofIntersections;</span>
+
+<span style="color: yellow">// Please note that the code to collect data and save it in data structures and</span>
+<span style="color: yellow">// the code for optimization are hidden. Contact me if you wish to see the code.</span>
+
+<span style="color: yellow">//Returns the street segments for the given intersection </span>
+<span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #66d9ef">int</span><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">find_street_segments_of_intersection(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">intersection_id)</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span> <span style="color: #f92672">&lt;</span><span style="color: #66d9ef">int</span><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">streetSegmentsIDS;</span>
+    <span style="color: #f8f8f2">streetSegmentsIDS</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">IntersectionsOfMap[intersection_id];</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">streetSegmentsIDS;</span>
+<span style="color: #f8f8f2">}</span>
+
+<span style="color: yellow">//Returns the street names at the given intersection</span>
+<span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">string</span><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">find_street_names_of_intersection(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">intersection_id)</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">string</span><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">streetSegments_Names;</span>
+    <span style="color: #f8f8f2">streetSegments_Names</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">StreetNamesofIntersections[intersection_id];</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">streetSegments_Names;</span>
+<span style="color: #f8f8f2">}</span>
+
+
+<span style="color: yellow">//Returns true if you can get from intersection_ids.first to intersection_ids.second</span>
+<span style="color: #66d9ef">bool</span> <span style="color: #f8f8f2">are_directly_connected(std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">pair</span><span style="color: #f92672">&lt;</span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2">,</span> <span style="color: #66d9ef">int</span><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">intersection_ids)</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: yellow">//Corner Case</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(intersection_ids.first</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">intersection_ids.second)</span> <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">true;</span>
+
+    <span style="color: #66d9ef">bool</span> <span style="color: #f8f8f2">connectedIntersection</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">false;</span>
+    <span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #66d9ef">int</span><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">AdjacentIntersections1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">find_adjacent_intersections(intersection_ids.first);</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">AdjacentIntersections1.size();</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(AdjacentIntersections1[i]</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">intersection_ids.second)</span> <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">connectedIntersection</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">true;</span>
+        <span style="color: #f8f8f2">}</span>
+    <span style="color: #f8f8f2">}</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">connectedIntersection;</span>
+<span style="color: #f8f8f2">}</span>
+
+<span style="color: yellow">//Returns all intersections reachable by traveling down one street segment</span>
+<span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #66d9ef">int</span><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">find_adjacent_intersections(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">intersection_id)</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">std</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">vector</span><span style="color: #f92672">&lt;</span><span style="color: #66d9ef">int</span><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">adjacentIntersections;</span>
+    <span style="color: #f8f8f2">adjacentIntersections</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">AdjacentIntersections[intersection_id];</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">adjacentIntersections;</span>
+<span style="color: #f8f8f2">}</span>
+</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UX / UI -->
+    <section id="1" class="uxui">
+        <div class="container">
+            <h1 class="mappa-subtitle">UI / UX</h1>
+            <div class="row">
+                <div id="community-struct" class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                    <p id="uiuxText0"> The team used EzGL, a graphics library, to visualize the map and display critical
+                        information for the users. Our main focus throughout this process was on designing a simple
+                        user interface (UI) and creating a pleasant user experience (UX).
+                    </p>
+                </div>
+                <div id="uxui-block" class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <h1 id="uiuxText1">Visual Features</h1>
+                    <ul>
+                        <li>Street names are displayed at proper zoom levels</li>
+                        <li>Major roads are differentiated from minor roads</li>
+                        <li>Street directions are shown (one-way or both ways)</li>
+                        <li>Points of Interest including, but not limited to:
+                        </li>
+                        <ul>
+                            <li>Parks</li>
+                            <li>Beaches</li>
+                            <li>Subway Stations</li>
+                            <li>Hospitals</li>
+                            <li>Banks</li>
+                            <li>Restaurants</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div id="uxui-block" class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <img src="../img/POIsearch.png" alt="">
+                </div>
+                <div id="uxui-block" class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <img src="../img/NightmodeSearch.png" alt="">
+                </div>
+                <div id="uxui-block" class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div id="community-item">
+                        <h1 id="uiuxText2">100% Customizable</h1>
+                        <p id="uiuxText3"> we wanted to give as much control to the user as possible and to make every
+                            feature on the
+                            map
+                            Customizable. One of our ideas as a result of this was a mode that allows the user to fully
+                            customize
+                            the map color scheme as he or she wishes and filter specific content from the map.
+                        </p>
+                    </div>
+                </div>
+                <div id="uxui-block" class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div id="community-item">
+                        <h1 id="uiuxText4">Powerful Search Bar</h1>
+                        <p id="uiuxText5">We built a search bar with the following capabilities:</p>
+                        <ul>
+                            <li>Allow users to find their destination using partial street names or mispelled names</li>
+                            <li>Locate and highlight the intersection of two given streets</li>
+                            <li>Find the shortest driving or walking path between two locations</li>
+                            <li>Delete any past search-related data to improve the map's responsiveness</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="uxui-block" class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <img src="../img/Drive.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="6" class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="social text-center">
+                    <h5>Alexandre</h5>
+                    <a target="_blank" href="https://www.linkedin.com/in/alexandre-gouveia-r/"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                    <a href="#"><i class='bx bx-envelope'></i></a>
+                    <a target="_blank" href="https://github.com/alexandregr26"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.3.5.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/isotope.min.js"></script>
+    <script
+        src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp;skin=sunburst"></script>
+    <script src="./mappa.js"></script>
+</body>
+
+</html>
