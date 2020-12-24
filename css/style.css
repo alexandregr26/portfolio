@@ -231,6 +231,12 @@ header .navbar .navbar-nav li > a:hover:after{
     background-size: cover;
 }
 
+#ece344{
+    background: url('../img/threads.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 #splitz{
     background: url('../img/Screenshot2ResizedCropped.png') no-repeat;
     background-position: center;
@@ -641,6 +647,28 @@ footer.footer-area .social a>i{
     font-size: 32px;
     font-weight: 600;
     padding-bottom: 20px;
+}
+
+/* Threads */
+#box-thread-banner{
+    background: url(../img/threadpng.png);
+    background-size: 100% 100%;
+    padding: 180px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.thread-project-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 30px 0;
 }
 
 /* HHC PAGE */
