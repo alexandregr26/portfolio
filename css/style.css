@@ -237,6 +237,12 @@ header .navbar .navbar-nav li > a:hover:after{
     background-size: cover;
 }
 
+#ece361{
+    background: url('../img/file_transfer_main.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 #splitz{
     background: url('../img/Screenshot2ResizedCropped.png') no-repeat;
     background-position: center;
@@ -669,6 +675,28 @@ footer.footer-area .social a>i{
     text-transform: uppercase;
     margin: 0;
     padding: 0 0 30px 0;
+}
+
+/* File Transfer */
+#box-file-transfer-banner{
+    background: url(../img/file_transfer_cover.png);
+    background-size: 100% 100%;
+    padding: 180px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+
+#file-transfer-functionality{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#file-transfer-functionality img{
+    height: 200px;
+    width: 500px;
 }
 
 /* HHC PAGE */

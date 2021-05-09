@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre's</title>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Boxicon Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div id="navbar-container" class="container">
+            <a class="navbar-brand" href="../index.html">
+                <h1 class="nav-logo">Alexandre Gouveia Rodrigues</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="aboutText" class="nav-link" href="../index.html#1">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a id="workText" class="nav-link" href="../index.html#2">Work<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="skillsText" class="nav-link" href="../index.html#3">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="communityText" class="nav-link" href="../index.html#4">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="educationText" class="nav-link" href="../index.html#5">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contactText" class="nav-link" href="../index.html#6">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <select id="list" onchange="getSelectValue();">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                            <option value="pt">PT</option>
+                            <option value="es">ES</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<body>
+    <!-- Previous & Next Button -->
+    <section class="mapping">
+        <div id="mapping-about" class="container">
+            <div class="mapping-div">
+                <div class="mapping-back">
+                    <a href="../projects/threads.html"><i class='bx bx-left-arrow-alt'></i></a>
+                    <div id="backText">Previous</div>
+                </div>
+                <div class="mapping-next">
+                    <div id="nextText">Next</div>
+                    <a href="../projects/hhc.html"><i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <section id="thread-banner">
+        <div id="box-file-transfer-banner" class="container">
+            <h2 id="">File Transfer</h2>
+            <h2 id="">Application</h2>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="3" class="project-skills">
+        <div id="box-project-skills" class="container">
+            <div class="skillsHeader">
+                <h1 id="skillsToolsUsedText" class="skills-project-title">Skills & Tools Used</h1>
+            </div>
+            <div id="skills-project-list" class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <div id="project-skills-item">
+                        <div class="imgcircle">
+                            <img src="../img/clogo1.png" class="skill-icon" alt="">
+                        </div>
+                        <h2>C</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <div id="project-skills-item">
+                        <div class="imgcircle">
+                            <img src="../img/git.png" class="skill-icon" alt="">
+                        </div>
+                        <h2>Git</h2>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Project Info -->
+    <section class="about">
+        <div id="box-about" class="container">
+            <h1 id="projectInfoText0" class="mappa-subtitle">Project Information</h1>
+            <div class="row">
+                <div id="community-struct" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="community-item">
+                        <p id="projectInfoText1">This project was designed by the University of Toronto's ECE361
+                            Computer Networks I staff to help students gain some hands-on experience with socket
+                            programming. In this project, I used UNIX sockets to implement simple client and server
+                            programs to interact with each other to accomplish a file transfer in a connectionless
+                            manner.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure -->
+    <section class="infrastructure">
+        <div id="box-infrastructure" class="container">
+            <h1 id="infrastructureText0" class="mappa-subtitle">Functionality</h1>
+            <div class="row">
+                <div id="community-struct" class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                    <p id="infrastructureText1"> 1. The server opens a socket and listens for incoming data at a
+                        specific port number.</p>
+                    <p id="infrastructureText1"> 2. The client reads a binary file from the file system and transfers
+                        the file to the server.</p>
+                    <p id="infrastructureText1"> 3. When the server receives the client’s data, it writes the data to a
+                        file.</p>
+                </div>
+            </div>
+            <div id="file-transfer-struct" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div id="file-transfer-functionality">
+                    <img src="../img/file_transfer_functionality.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="sectionArea">
+        <div id="box-mappa" class="container">
+            <h1 id="codeText0" class="mappa-subtitle">The Code</h1>
+            <div id="community-list" class="row">
+                <div id="community-struct" class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                    <div id="community-item">
+                        <p id="codeText1">The source code for this File Transfer Application is available on my Github
+                            page, but on a private repository to encourage Academic Integrity. Please contact me if you
+                            wish to see the full code.</p>
+                    </div>
+                </div>
+                <div id="community-struct" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h1 id="skillsToolsUsedText" class="thread-project-title">Client</h1>
+                    <!-- HTML generated using hilite.me -->
+                    <div
+                        style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                        <pre style="margin: 0; line-height: 125%"><span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">main</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">argc</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #204a87; font-weight: bold">char</span> <span style="color: #ce5c00; font-weight: bold">*</span><span style="color: #000000">argv</span><span style="color: #000000; font-weight: bold">[])</span> <span style="color: #000000; font-weight: bold">{</span>
+    <span style="color: #8f5902; font-style: italic">// Corner Case: Checking number of arguments</span>
+    <span style="color: #204a87; font-weight: bold">if</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">argc</span> <span style="color: #ce5c00; font-weight: bold">!=</span> <span style="color: #0000cf; font-weight: bold">3</span><span style="color: #000000; font-weight: bold">)</span> <span style="color: #000000; font-weight: bold">{</span>
+        <span style="color: #000000">printf</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;Usage: ./deliver server_address server_port_number \n&quot;</span><span style="color: #000000; font-weight: bold">);</span>
+        <span style="color: #000000">exit</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #000000; font-weight: bold">}</span>
+
+    <span style="color: #8f5902; font-style: italic">// Collect arguments (IP + port)</span>
+    <span style="color: #204a87; font-weight: bold">char</span> <span style="color: #ce5c00; font-weight: bold">*</span><span style="color: #000000">server_address</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">argv</span><span style="color: #000000; font-weight: bold">[</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">];</span>
+    <span style="color: #204a87; font-weight: bold">char</span> <span style="color: #ce5c00; font-weight: bold">*</span><span style="color: #000000">server_port_number</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">argv</span><span style="color: #000000; font-weight: bold">[</span><span style="color: #0000cf; font-weight: bold">2</span><span style="color: #000000; font-weight: bold">];</span>
+    <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">server_port_integer</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">atoi</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">server_port_number</span><span style="color: #000000; font-weight: bold">);</span>
+
+    <span style="color: #8f5902; font-style: italic">// Collect input (filename) from the user</span>
+    <span style="color: #204a87; font-weight: bold">char</span> <span style="color: #000000">protocol</span><span style="color: #000000; font-weight: bold">[</span><span style="color: #000000">MAX_BUFFER_SIZE</span><span style="color: #000000; font-weight: bold">];</span>
+    <span style="color: #204a87; font-weight: bold">char</span> <span style="color: #000000">filename</span><span style="color: #000000; font-weight: bold">[</span><span style="color: #000000">MAX_BUFFER_SIZE</span><span style="color: #000000; font-weight: bold">];</span>
+    <span style="color: #204a87; font-weight: bold">do</span> <span style="color: #000000; font-weight: bold">{</span>
+        <span style="color: #000000">printf</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;Please input your filename in the format &#39;ftp &lt;filename&gt;&#39;: &quot;</span><span style="color: #000000; font-weight: bold">);</span>
+        <span style="color: #000000">scanf</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;%s %s&quot;</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">protocol</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">filename</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #000000; font-weight: bold">}</span> <span style="color: #204a87; font-weight: bold">while</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">strcmp</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;ftp&quot;</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">protocol</span><span style="color: #000000; font-weight: bold">)</span> <span style="color: #ce5c00; font-weight: bold">!=</span> <span style="color: #0000cf; font-weight: bold">0</span><span style="color: #000000; font-weight: bold">);</span>
+
+    <span style="color: #8f5902; font-style: italic">// Check if file exists</span>
+    <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">file_existence</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">access</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">filename</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">F_OK</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #204a87; font-weight: bold">if</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">file_existence</span> <span style="color: #ce5c00; font-weight: bold">!=</span> <span style="color: #0000cf; font-weight: bold">0</span><span style="color: #000000; font-weight: bold">)</span> <span style="color: #000000; font-weight: bold">{</span>
+        <span style="color: #000000">printf</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;File does not exist. \n&quot;</span><span style="color: #000000; font-weight: bold">);</span>
+        <span style="color: #000000">exit</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #000000; font-weight: bold">}</span>
+
+    <span style="color: #8f5902; font-style: italic">// Create a socket (communication endpoint)</span>
+    <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">sockfd</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">socket</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">AF_INET</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">SOCK_DGRAM</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">IPPROTO_UDP</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #204a87; font-weight: bold">if</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">sockfd</span> <span style="color: #ce5c00; font-weight: bold">==</span> <span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">)</span> <span style="color: #000000; font-weight: bold">{</span>
+        <span style="color: #000000">printf</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;Failed to create a socket. \n&quot;</span><span style="color: #000000; font-weight: bold">);</span>
+        <span style="color: #000000">exit</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #000000; font-weight: bold">}</span>
+
+<span style="color: #000000; font-weight: bold">...</span>
+</pre>
+                    </div>
+                </div>
+                <div id="community-struct" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h1 id="skillsToolsUsedText" class="thread-project-title">Server</h1>
+                    <!-- HTML generated using hilite.me -->
+                    <div
+                        style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                        <pre style="margin: 0; line-height: 125%"><span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">main</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">argc</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #204a87; font-weight: bold">char</span> <span style="color: #ce5c00; font-weight: bold">**</span><span style="color: #000000">argv</span><span style="color: #000000; font-weight: bold">)</span> <span style="color: #000000; font-weight: bold">{</span>
+    <span style="color: #8f5902; font-style: italic">// Corner Case: Checking number of arguments</span>
+    <span style="color: #204a87; font-weight: bold">if</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">argc</span> <span style="color: #ce5c00; font-weight: bold">!=</span> <span style="color: #0000cf; font-weight: bold">2</span><span style="color: #000000; font-weight: bold">)</span> <span style="color: #000000; font-weight: bold">{</span>
+        <span style="color: #000000">fprintf</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">stderr</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #4e9a06">&quot;Usage: ./server port_number \n&quot;</span><span style="color: #000000; font-weight: bold">);</span>
+        <span style="color: #000000">exit</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #000000; font-weight: bold">}</span>
+
+    <span style="color: #204a87; font-weight: bold">char</span> <span style="color: #ce5c00; font-weight: bold">*</span><span style="color: #000000">server_port_number</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">argv</span><span style="color: #000000; font-weight: bold">[</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">];</span>
+    <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">server_port_integer</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">atoi</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">server_port_number</span><span style="color: #000000; font-weight: bold">);</span>
+
+    <span style="color: #8f5902; font-style: italic">// Create a socket (communication endpoint)</span>
+    <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">sockfd</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">socket</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">AF_INET</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">SOCK_DGRAM</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">IPPROTO_UDP</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #204a87; font-weight: bold">if</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">sockfd</span> <span style="color: #ce5c00; font-weight: bold">==</span> <span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">)</span> <span style="color: #000000; font-weight: bold">{</span>
+        <span style="color: #000000">printf</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;Failed to create a socket. \n&quot;</span><span style="color: #000000; font-weight: bold">);</span>
+        <span style="color: #000000">exit</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #000000; font-weight: bold">}</span>
+
+    <span style="color: #8f5902; font-style: italic">// Setting up port and IP address for binding</span>
+    <span style="color: #204a87; font-weight: bold">struct</span> <span style="color: #000000">sockaddr_in</span> <span style="color: #000000">socket_address_info</span><span style="color: #000000; font-weight: bold">;</span>
+    <span style="color: #000000">socket_address_info</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">sin_family</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">AF_INET</span><span style="color: #000000; font-weight: bold">;</span>
+    <span style="color: #000000">socket_address_info</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">sin_port</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87; font-weight: bold">unsigned</span> <span style="color: #204a87; font-weight: bold">short</span> <span style="color: #204a87; font-weight: bold">int</span><span style="color: #000000; font-weight: bold">)</span><span style="color: #000000">htons</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">server_port_integer</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #000000">socket_address_info</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">sin_addr</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">s_addr</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">htonl</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">INADDR_ANY</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #000000">memset</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #ce5c00; font-weight: bold">&amp;</span><span style="color: #000000">socket_address_info</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">sin_zero</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #0000cf; font-weight: bold">0</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #204a87; font-weight: bold">sizeof</span> <span style="color: #000000">socket_address_info</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">sin_zero</span><span style="color: #000000; font-weight: bold">);</span>
+
+    <span style="color: #8f5902; font-style: italic">// Bind socket to receive data</span>
+    <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">bind_value</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">bind</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">sockfd</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87; font-weight: bold">struct</span> <span style="color: #000000">sockaddr</span> <span style="color: #ce5c00; font-weight: bold">*</span><span style="color: #000000; font-weight: bold">)</span><span style="color: #ce5c00; font-weight: bold">&amp;</span><span style="color: #000000">socket_address_info</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #204a87; font-weight: bold">sizeof</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">socket_address_info</span><span style="color: #000000; font-weight: bold">));</span>
+    <span style="color: #204a87; font-weight: bold">if</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">bind_value</span> <span style="color: #ce5c00; font-weight: bold">==</span> <span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">)</span> <span style="color: #000000; font-weight: bold">{</span>
+        <span style="color: #000000">printf</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;Failed to bind socket. \n&quot;</span><span style="color: #000000; font-weight: bold">);</span>
+        <span style="color: #000000">exit</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #000000; font-weight: bold">}</span>
+
+    <span style="color: #000000">printf</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;Waiting for a message... \n&quot;</span><span style="color: #000000; font-weight: bold">);</span>
+
+<span style="color: #000000; font-weight: bold">...</span>
+</pre>
+                    </div>
+                </div>
+                <div id="community-struct" class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                    <div class="splitzbutton">
+                        <a href="../projects/contact.html">
+                            <button id="codeText2">See Full Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="6" class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="social text-center">
+                    <h5>Alexandre</h5>
+                    <a target="_blank" href="https://www.linkedin.com/in/alexandre-gouveia-r/"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                    <a href="../projects/contact.html"><i class='bx bx-envelope'></i></a>
+                    <a target="_blank" href="https://github.com/alexandregr26"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.3.5.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/isotope.min.js"></script>
+    <script
+        src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp;skin=sunburst"></script>
+    <script src="./threads.js"></script>
+</body>
+
+</html>
